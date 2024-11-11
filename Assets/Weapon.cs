@@ -5,7 +5,7 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public Transform FirePoint;
-    public GameObject bulletPrefab;
+    public GameObject Prefab;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +23,7 @@ public class Weapon : MonoBehaviour
     }
     void Shoot()
     {
-        Instantiate(bulletPrefab, FirePoint.position, FirePoint.rotation);
+        Instantiate(Prefab, FirePoint.position, FirePoint.rotation);
     }
 
 
